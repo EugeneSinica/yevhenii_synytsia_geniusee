@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-movie
+      author: user
+      changes:
+        - createTable:
+            tableName: order
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: comment
+                  type: varchar(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: order_time
+                  type: varchar(50)
+                  constraints:
+                    nullable: false

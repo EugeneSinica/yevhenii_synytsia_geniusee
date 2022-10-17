@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-movie
+      author: user
+      changes:
+        - createTable:
+            tableName: order_movies
+            columns:
+              - column:
+                  name: order_id
+                  type: bigint
+                  constraints:
+                    foreignKeyName: order_fk
+                    referencedTableName: order
+                    referencedColumnNames: id
+              - column:
+                  name: movies_id
+                  type: bigint
+                  constraints:
+                    foreignKeyName: movie_fk
+                    referencedTableName: movie
+                    referencedColumnNames: id

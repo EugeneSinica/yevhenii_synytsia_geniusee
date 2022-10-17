@@ -1,0 +1,19 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "BestMovie2022",
+      "description": "4real",
+      "cinemaHallNumber": 1,
+      "showTime": "2022-10-20T00:00:00"
+    },
+    {
+      "id": 2,
+      "title": "BestMovie2021",
+      "description": "4real",
+      "cinemaHallNumber": 2,
+      "showTime": "2022-10-21T00:00:00"
+    }
+  ],
+  "comment": "Best comment ever"
+}
