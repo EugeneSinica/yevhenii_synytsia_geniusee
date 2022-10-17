@@ -10,7 +10,7 @@ After the app started you have these endpoints available:
 
 **PUT** ```localhost:8080/movies/{id}``` updates movie by id;
 
-**DELETE** ```localhost:8080/movies``` deletes movie by id;
+**DELETE** ```localhost:8080/movies/{id}``` deletes movie by id;
 
 **GET** ```localhost:8080/movies?params``` gets movies according to criteria query. 
 
@@ -26,7 +26,7 @@ This method also supports pagination: ```count=20&page=0```.
 
 **PUT** ```localhost:8080/orders/{id}``` updates order by id;
 
-**DELETE** ```localhost:8080/orders``` deletes order by id;
+**DELETE** ```localhost:8080/orders/{id}``` deletes order by id;
 
 Sample body to create movie: 
 ```
